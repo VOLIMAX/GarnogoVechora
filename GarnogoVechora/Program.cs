@@ -12,8 +12,7 @@ namespace GarnogoVechora
             Console.WriteLine($"e equals ee = {qq}");
             Console.WriteLine($"e`s hackcode = {e.GetHashCode()}\n ee`s hackcode = {ee.GetHashCode()}");
 
-            //e.TurazhVydaniya = -10;
-            //Console.WriteLine(e.TurazhVydaniya);
+            
 
             Magazine f = new Magazine();            
             f.AddArticles(new Article("Point of deception", 8.2), new Article("Source", 9.3), new Article("Robinson Cruso", 6.2), new Article("Witcher", 10), new Article("Mister Mercedes", 9.9), new Article("The rise of cannibal", 8) );
@@ -35,6 +34,9 @@ namespace GarnogoVechora
             {
                 Console.WriteLine(a.Title);
             }
+
+            e.TurazhVydaniya = -10;
+            Console.WriteLine(e.TurazhVydaniya);
         }
     }
 }
