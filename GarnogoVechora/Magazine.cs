@@ -119,5 +119,26 @@ namespace GarnogoVechora
                     return Frequency.Yearly;
             }
         }
+        private Edition pidObj;
+
+        public Edition PidObj
+        {
+            get 
+            {
+                pidObj = new Edition();
+                pidObj.DataVydaniya = this.DataVydaniya;
+                pidObj.NazvaVydaniya = this.NazvaVydaniya;
+                pidObj.TurazhVydaniya = this.TurazhVydaniya;
+               return pidObj;                
+            }
+            set 
+            {
+                Magazine q = new Magazine();
+                pidObj = new Edition();
+                pidObj = q;
+                pidObj = value;
+            }
+        }
+
     }
 }
